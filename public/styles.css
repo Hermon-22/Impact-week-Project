@@ -1,0 +1,351 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+}
+
+body{
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  /* background: #fae8e8; */
+  background: linear-gradient(#ffffff, #2a4a53);
+  /* border: 1px red solid; */
+}
+
+
+.logSign{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+h1, h2, h3, h4, ul, li, a, p, input, label, button, div, footer{
+  /* margin: 0;
+  padding: 0; */
+  font-family: 'Quicksand', sans-serif;
+  /* color: #444; */
+}
+
+
+ul{
+  list-style-type: none;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+
+.edit-delete{
+  color: #ddd;
+  margin-left: 10px;
+}
+
+
+.edit-delete:hover{
+  color: rgb(189, 189, 189);
+}
+
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-end; */
+  background-color: rgb(255, 255, 255);
+  padding-top: 10px ;
+}
+.buttons{
+  padding: 4px;
+  width: 12px;
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 80%;
+  background-color: rgb(119, 164, 182);
+  color: black;
+}
+.welome-user{
+  padding: 10px;
+  width: 20%;
+  margin-top: 10px auto;
+  background: #88b2be;
+  color: black;
+  border-radius: 3px;
+}
+
+.addQbtn{
+  width: 12pc;
+  margin-left: 10%;
+}
+
+li a:hover{
+  background-color: rgb(228, 213, 128);
+}
+
+
+nav li a{
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+
+.btns{
+  border-radius: 36px;
+  background: #FEE996;
+}
+
+
+.btnAuth {
+  margin-left: 60%;
+  box-shadow: 8px 11px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+
+.Qcard{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.Qcard a{
+  background-color: black;
+  color: white;
+  box-shadow: 8px 11px 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+
+
+form h2{
+  font-size: 2em;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+
+form{
+  width: 360px;
+  margin-left: 54px;
+  padding: 7px;
+  box-shadow: 8px 11px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+}
+
+.addQ{
+  width: 60%;
+  height: 40vh;
+}
+
+
+input{
+  /* padding: 10px 12px; */
+  border-radius: 4px;
+  border: 1px solid rgb(163, 163, 163);
+  font-size: 1em;
+  width: 60%;
+}
+
+#login{
+  height: 15%;
+}
+
+label{
+  display: block;
+  margin: 10px 0 10px;
+}
+
+
+button{
+  margin-top: 15px;
+  border-radius: 26px;
+  background: #FEE996;
+  border:0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8em;
+  display: block;
+  padding: 10px 16px;
+  letter-spacing: 2px;
+}
+
+
+.seeMore-form{
+  width: 50%;
+  height: 500px ;
+}
+
+.seeMore-form {
+  width: 100%;
+  margin: auto auto;
+}
+
+.question-form{
+  width: 50%;
+  box-shadow: 8px 11px 5px rgba(0,0,0,0.1);
+  margin: 15px auto ;
+}
+
+.seeMore-body{
+  width: 100%;
+}
+
+
+.seeMore-btn{
+  width: 30%;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  
+}
+.btn-success{
+  background-color: rgb(22, 22, 94);
+}
+
+.btn-danger{
+  margin-left: 10px;
+  background-color: rgb(224, 14, 14);
+}
+
+
+.seeMore-btn{
+  width: 50%;
+  display: flex;
+}
+
+.seeMore-comment{
+  width: 100%;
+  margin: 30px 20px 30px 10px;
+}
+
+.seeMore-comment label{
+  width: 40%;
+  margin-right: 10px;
+}
+
+.seeMore-comment input{
+  width: 80%;
+  height: 80px;
+}
+
+.del-comment {
+  color: white;
+  width: 50%;
+  margin-left: 30px;
+  /* margin-top: 40px; */
+}
+
+.edit-question form{
+  width: 70%;
+}
+.edit-question input{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.edit-question textarea{
+  width: 100%;
+  height: 60px;
+  /* border-radius: 20px; */
+  margin-top: 30px;
+}
+
+.input-group {
+  width: 70%;
+}
+
+.btn-info{
+  background-color: rgb(41, 117, 41);
+  color: white;
+  width: 20%;
+  margin-left: 30px;
+}
+
+.comments{
+  border: dashed 2px rgb(16, 17, 15);
+  width: 30%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+
+.oneComment{
+  width: 90%;
+  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.error{
+  color: #ff0099;
+  margin: 10px 2px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.warning-style{
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 30px;
+  background: red;
+  text-align: center;
+}
+
+header{
+  display: flex;
+  align-items: center;
+}
+
+header h2{
+  font-size: 1.5em;
+  margin: 30px 20px 30px 10px;
+}
+
+header h3{
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  margin-left: 2px;
+  color: #999;
+}
+
+header .btn{
+  margin-top: 20px;
+  padding: 12px 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 0.8em;
+}
+
+.welcome{
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 80px;
+  font-size: 30px;
+  padding-top: 20px;
+  /* border: 1px red solid; */
+}
+
+.welcome a{
+  padding: 10px;
+  color:white;
+  width: 30%;
+  background: #567f8b;
+  margin-left: 300px;
+  border-radius: 3px;
+}
+
+footer{
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  margin-top: 100px;
+}
+
+.footer-title{
+  color: white;
+}

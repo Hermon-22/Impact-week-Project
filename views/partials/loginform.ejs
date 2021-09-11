@@ -1,0 +1,40 @@
+<script>    
+
+    // FOR LOGIN
+        const formLogin = document.getElementById('login');
+        const emailErrorLogin = document.querySelector('.emailLogin.error');
+        const passwordErrorLogin = document.querySelector('.passwordLogin.error');
+    
+        formLogin.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            // reset errors
+            // usernameErrorLogin.textContent = '';
+            emailErrorLogin.textContent = '';
+            passwordErrorLogin.textContent = '';
+    
+            // get the values
+        const email = formLogin.email.value
+        const password = formLogin.password.value;
+    
+            try{
+                const resLogin = await fetch('/auth/login', {
+                    method: 'POST',
+                    body: JSON.stringify({ email, password }),
+                    headers: { 'Content-Type': 'application/json'}
+                })
+                const data = await resLogin.json()
+                console.log(data)
+                if (data.errors) {
+                    // data.errors.username = ''
+                    emailErrorLogin.textContent = data.errors.email;
+                    passwordErrorLogin.textContent = data.errors.password;
+                }
+                if (data.user) {
+                    location.assign('/')
+                }
+            }
+            catch(err){
+                console.log(err)
+            }
+        })
+    </script>

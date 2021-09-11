@@ -1,0 +1,25 @@
+<%- include('partials/header'); -%>
+<h3 class="welcome"  ><a href="/">Welcome to Matrix Master community</a> </h3><br><br><br>
+<form action="/addQuestion" method="POST" class="addQ">
+  <label for="question">Question</label>
+  <input type="text" name="question" /> 
+
+  <!-- if any error happens -->
+  <% if(error && error.question ){ %> 
+    <span class="error"><%= error.question.properties.message %> </span>
+  <% } %>
+
+  <br> <br>
+
+  
+    <textarea class="form-control" name="description"  id="floatingTextarea2"></textarea>
+
+  <!-- if any error happens -->
+  <% if(error && error.description ){ %> 
+    <span class="error"><%= error.description.properties.message %> </span>
+  <% } %>
+
+  <button type="submit" >submit </button>
+</form>
+
+<%- include('partials/footer'); %>

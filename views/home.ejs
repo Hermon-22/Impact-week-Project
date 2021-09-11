@@ -1,0 +1,30 @@
+<%- include('partials/header'); -%>
+<h4 class="welcome"  ><a  href="/">Welcome to Matrix Master community</a> </h4>
+<header>
+  <div class="headings">
+    <h2>matrix master community</h2>
+    <h3 style="color: rgb(36, 14, 236);">There are <%= result.length %>  question(s)</h3>
+    <a href="/addQuestion" class="btn btn-warning addQbtn">add question</a><br><br>
+  </div>
+</header>
+<div class="Qcard">
+  <% if (result.length > 0) { %>
+    <% result.map(res => { %>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <p>question from (<%= res.users.username %> )</p>
+                <h3 class="card-title"> <%= res.question %></h3>
+                <h6 class="card-text"> <%= res.description %></h6>
+                <small>at <%= res.time %></small>
+                <br>
+                <a class="btn btn-primary" href=<%= "/question/" + res._id%>> see more </a>
+            </div>
+        </div>
+    <% }) %> 
+<% }else{  %>
+    <p class="warning-style">There is no question</p> 
+    <% } %>
+</div>
+
+
+<%- include('partials/footer'); -%>

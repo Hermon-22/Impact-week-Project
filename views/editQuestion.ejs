@@ -1,0 +1,20 @@
+<%- include('partials/header'); -%>
+<h1 class="welcome"  ><a  href="/">Welcome to Matrix Master community</a> </h1>
+    <div class="edit-question">
+        <h2>edit A question</h2>
+    
+        <form <%= "/question/edit/" + result._id %> method="POST">
+            <div class="input-group m-3" >
+                <span >Question</span><br>
+                <textarea name="question" class="form-control edit-text" aria-label="With textarea" required><%= result.question %></textarea>
+            </div>
+
+            <div class="input-group m-3">
+                <span ><mark> Description</mark></span><br>
+                <textarea name="description" class="form-control edit-text" aria-label="With textarea" required><%= result.description %></textarea>
+            </div>
+            
+            <button class="btn btn-info " type="submit">Edit</button>
+        </form>
+    </div>
+<%- include('partials/footer'); -%>
