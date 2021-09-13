@@ -32,4 +32,4 @@ app.use((req, res)=> res.status(404).render('404'))
 app.use((req, res)=> res.status(404).render('404'))
 
 // listen to 4000
-app.listen( port, ()=> console.log('connected to port 4000')) 
+app.listen( port, ()=> console.log('connected to port ' + port)) 
