@@ -331,11 +331,11 @@ header .btn{
 }
 
 .welcome a{
-  padding: 10px;
+  padding: 5px;
   color:white;
   width: 30%;
   background: #567f8b;
-  margin-left: 300px;
+  margin-left: 50px;
   border-radius: 3px;
 }
 
@@ -348,4 +348,31 @@ footer{
 
 .footer-title{
   color: white;
+}
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .welcome a{
+    padding: 0;
+    font-size: 22px;
+    margin-left: 0px;
+  }
+  .welome-user{
+    width: 40%;
+    padding: 0;
+  }
+  .buttons{
+    padding: 0;
+    font-size: 20px;
+    margin-left: 40%;
+  }
+}
+@media only screen and (max-width:400px) {
+  /* For mobile phones: */
+  .welome-user{
+    width: 40%;
+    padding: 0;
+  }
+  .welcome a{
+    font-size: 20px;
+  }
 }
