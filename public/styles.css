@@ -19,7 +19,7 @@ body{
 
 .logSign{
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 }
 
 
@@ -172,7 +172,10 @@ button{
   padding: 10px 16px;
   letter-spacing: 2px;
 }
-
+.submitQuestion{
+  padding: 0;
+  margin-top: 5px;
+}
 
 .seeMore-form{
   width: 50%;
@@ -353,12 +356,16 @@ footer{
   /* For mobile phones: */
   .welcome a{
     padding: 0;
-    font-size: 22px;
+    font-size: 21px;
     margin-left: 0px;
   }
   .welome-user{
     width: 40%;
     padding: 0;
+  }
+  form{
+    /* width: 300px; */
+    margin-left: 35px;
   }
   .buttons{
     padding: 0;
@@ -374,5 +381,14 @@ footer{
   }
   .welcome a{
     font-size: 20px;
+  }
+  form{
+    width: 300px;
+    margin-left: 10px;
+  }
+  .buttons{
+    padding: 0;
+    font-size: 20px;
+    margin-left: 30%;
   }
 }

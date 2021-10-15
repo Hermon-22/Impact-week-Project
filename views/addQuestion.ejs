@@ -9,9 +9,9 @@
     <span class="error"><%= error.question.properties.message %> </span>
   <% } %>
 
-  <br> <br>
+  <br>
 
-  
+  <label for="description">Description</label>
     <textarea class="form-control" name="description"  id="floatingTextarea2"></textarea>
 
   <!-- if any error happens -->
@@ -19,7 +19,7 @@
     <span class="error"><%= error.description.properties.message %> </span>
   <% } %>
 
-  <button type="submit" >submit </button>
+  <button type="submit" class="submitQuestion">submit </button>
 </form>
 
 <%- include('partials/footer'); %>
