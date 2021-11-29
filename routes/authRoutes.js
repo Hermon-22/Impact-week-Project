@@ -38,7 +38,8 @@ router.post('/question/edit/:id', questionController.editQuestion_post);
 // delete a question
 router.get('/question/delete/:id', questionController.removeQ)
 
-
+// NOT FOUND
+router.get('/:id', authController.notFound)
 
 
 module.exports = router

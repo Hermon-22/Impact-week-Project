@@ -22,13 +22,7 @@ app.set('view engine', 'ejs');
 
 // routes
 
-// app.get('/', (req, res) => res.render('home'));
-// app.get('/addQuestion', requireAuth , (req, res) => res.render('addQuestion'));
 app.use(authroutes);
-app.use((req, res)=> res.status(404).render('404'))
-
-
-
 app.use((req, res)=> res.status(404).render('404'))
 
 // listen to 4000

@@ -78,6 +78,9 @@ const logout_get = ( req, res )  => {
     res.redirect('/')
 }
 
+const notFound = ( req, res) => {
+    res.status(404).render('404', {pageTitle: 'Not found'} )
+}
 
 
 module.exports = {
@@ -86,4 +89,5 @@ module.exports = {
     signup_post,
     login_post,
     logout_get,
+    notFound
 }
