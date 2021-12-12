@@ -4,7 +4,7 @@ const Comment = require('../model/commentSchema');
 const homePage = (req, res) => {
     Q_auth.find().populate('users',['username'])
     .then(result => {
-        res.render('home', { result, pageTitle:'Home' })
+        res.render('home', { result, pageTitle:'COMMUNITY APP' })
     }) 
 }
 
